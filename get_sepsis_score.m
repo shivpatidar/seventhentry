@@ -37,7 +37,7 @@ end
 
  [labels,scores1]=newfeatcomb(data(end,:),model);
 
- scores=scores1(:,2);
+ scores=scores1(:,2)./10;
  
  %labels=mode([labels1,labels2,labels3,labels4,labels5,labels6,labels7]);
  %scores=mode([scores1(:,2),scores2(:,2),scores3(:,2),scores4(:,2),scores5(:,2),scores6(:,2),scores7(:,2)])/sum([scores1(:,2),scores2(:,2),scores3(:,2),scores4(:,2),scores5(:,2),scores6(:,2),scores7(:,2)]);
